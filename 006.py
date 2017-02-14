@@ -1,15 +1,5 @@
-
-
 def main():
-
-    sum_x, sum_y = 0,0
-    for x in range(11):
-        sum_x += x*x
-    for y in range(11):
-        sum_y += y
-
-    print(sum_y*sum_y - sum_x)
-
+    return sum(range(1,101))**2 - sum(x**2 for x in range(1,101))
 
 if __name__ == '__main__':
     main()
