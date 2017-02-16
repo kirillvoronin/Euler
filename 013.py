@@ -101,12 +101,10 @@ def main():
         20849603980134001723930671666823555245252804609722
         53503534226472524250874054075591789781264330331690"""
 
-    l = N.split("\n")
-    y = list()
-    for x in l:
-        y.append(int(x))
 
-    return str(sum(y))[:10]
+    N = [int(x) for x in N.split("\n")]
+
+    return str(sum(N))[:10]
 
 if __name__ == '__main__':
     print(main())
