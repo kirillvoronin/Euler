@@ -7,6 +7,11 @@ def main():
     result = [True] * n
 
     for x in range(2,int(sqrt(n))):
+        #if result[x]:
+            #print(x, result[x])
+            #input()
+        #elif result[x] == False:
+            #print(x, result[x])
         for y in range(x * 2, n, x):
             result[y] = False
 
