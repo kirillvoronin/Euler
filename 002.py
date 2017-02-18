@@ -9,7 +9,6 @@ def main():
         if x % 2 == 0:
             summ += x
 
-
         result = x + y
         y = x
         x = result
