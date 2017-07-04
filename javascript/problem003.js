@@ -1,18 +1,18 @@
 let number = 600851475143;
 let res;
-let primer = true;
+let isPrime = true;
 const sqrtFromNumber = Math.sqrt(number);
 
 for (let i=3; i<=sqrtFromNumber; i+=2) {
   if (number % i === 0) {
-    primer = true;
+    isPrime = true;
     for (let j=3; j<=Math.sqrt(i); j+=2) {
       if (i % j === 0) {
-        primer = false;
+        isPrime = false;
         break;
       }
     }
-    if (primer) {
+    if (isPrime) {
       res = i;
     }
   }
