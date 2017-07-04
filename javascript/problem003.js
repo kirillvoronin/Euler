@@ -1,7 +1,7 @@
-let number = 600851475143;
+const number = 600851475143;
+const sqrtFromNumber = Math.sqrt(number);
 let res;
 let isPrime = true;
-const sqrtFromNumber = Math.sqrt(number);
 
 for (let i=3; i<=sqrtFromNumber; i+=2) {
   if (number % i === 0) {
