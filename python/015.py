@@ -1,5 +1,4 @@
 def main():
-
     gridSize = 20
     ways = 1
     for x in range(gridSize):
